@@ -1,12 +1,18 @@
 # 📋 Cuestionario Interactivo y Plataforma de Autoevaluación
-Entorno interactivo universal para autoevaluarse, simulando exámenes y consolidando conocimientos. Diseñado para funcionar de forma desacoplada con cualquier tipo de input, para cualquier contexto. Adapta sus temas, interfaz y banco de contenidos mediante este mismo input. 
+Entorno interactivo universal para autoevaluarse, simulando exámenes y consolidando conocimientos. Diseñado para funcionar de forma desacoplada con cualquier tipo de input, para cualquier contexto. Adapta sus temas, interfaz y banco de contenidos mediante este mismo input.
+
+---
+## Objetivo de este repositorio
+Aportar utilidad a usuarios que requieran una herramienta del estilo, permitiendo clonarla como plantilla para su actualización / ampliación. 
+Herramienta de utilidad para usuarios medios/bajos en el sector de la informática. 
+
+Conocimientos mínimos: XML básico (se requiere para conseguir rellenar el XML con las preguntas que deseamos).
+
 ---
 
-## 🎮 Aplicación de Autoevaluación
-
-> [!TIP] Acceso rápido a los archivos base:
-> * **Aplicación Web**: [`cuestionario.html`](cuestionario.html)
-> * **Banco de Preguntas Principal**: [`preguntas.xml`](preguntas.xml)
+## 🎮 Contenido del Repositorio
+[cuestionario.html] : Contenido que abrirá la interfaz interactiva tipo test
+[preguntas.xml]: Archivo que sirve como caso de prueba formato necesario para cualquier XML que queramos usar en esta aplicación
 
 ---
 
