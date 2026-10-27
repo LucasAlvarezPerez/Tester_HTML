@@ -1,0 +1,1010 @@
+<?xml version="1.0" encoding="utf-8"?>
+<banco_preguntas>
+  <metadatos>
+    <asignatura>Software y Estándares para la Web (SEW)</asignatura>
+    <descripcion>Banco oficial y exhaustivo de preguntas de examen y autoevaluación para Teoría (HTML, CSS, XML) y Seminarios (Adaptabilidad, Usabilidad, Accesibilidad) basado en los controles de evaluación continua de Uniovi y apuntes de teoría.</descripcion>
+    <version>4.0</version>
+    <total_preguntas>92</total_preguntas>
+  </metadatos>
+  <temas>
+    <tema id="html" nombre="HTML (Estructura, Semántica, Sintaxis y DOM)"/>
+    <tema id="css" nombre="CSS (Hojas de estilo, Selectores, Cascada, Especificidad y Cajas)"/>
+    <tema id="xml" nombre="XML (Sintaxis, DTD, Schemas XSD, XPath, XSLT, SVG, KML)"/>
+    <tema id="adaptabilidad" nombre="Seminario: Adaptabilidad en la Web"/>
+    <tema id="usabilidad" nombre="Seminario: Usabilidad en la Web"/>
+    <tema id="accesibilidad" nombre="Seminario: Accesibilidad en la Web"/>
+  </temas>
+  <preguntas>
+    <pregunta id="html-01" tema="html">
+      <enunciado>¿Cuál de los siguientes elementos HTML es un elemento vacío (void element) que no admite etiqueta de cierre ni contenido hijo?</enunciado>
+      <opciones>
+        <opcion id="a">p</opcion>
+        <opcion id="b">div</opcion>
+        <opcion id="c" correcta="true">img</opcion>
+        <opcion id="d">span</opcion>
+      </opciones>
+      <explicacion>En HTML5, elementos como img, br, meta, hr e input son void elements; no poseen hijos ni etiqueta de cierre.</explicacion>
+    </pregunta>
+    <pregunta id="html-02" tema="html">
+      <enunciado>En el árbol DOM (Document Object Model) de HTML, ¿qué constante numérica identifica a un nodo de tipo Elemento (ELEMENT_NODE)?</enunciado>
+      <opciones>
+        <opcion id="a" correcta="true">1</opcion>
+        <opcion id="b">2</opcion>
+        <opcion id="c">3</opcion>
+        <opcion id="d">8</opcion>
+      </opciones>
+      <explicacion>En la especificación DOM: 1 = ELEMENT_NODE, 2 = ATTRIBUTE_NODE, 3 = TEXT_NODE, 8 = COMMENT_NODE y 9 = DOCUMENT_NODE.</explicacion>
+    </pregunta>
+    <pregunta id="html-03" tema="html">
+      <enunciado>¿Qué elemento semántico de texto en línea se utiliza para representar una fecha u hora precisa legible por máquinas mediante su atributo 'datetime'?</enunciado>
+      <opciones>
+        <opcion id="a">&lt;date&gt;</opcion>
+        <opcion id="b" correcta="true">&lt;time&gt;</opcion>
+        <opcion id="c">&lt;calendar&gt;</opcion>
+        <opcion id="d">&lt;timestamp&gt;</opcion>
+      </opciones>
+      <explicacion>&lt;time&gt; permite a motores de búsqueda y calendarios interpretar fechas exactas a través del atributo normalizado 'datetime' (ej. datetime="2026-10-26").</explicacion>
+    </pregunta>
+    <pregunta id="html-04" tema="html">
+      <enunciado>En los enlaces del menú de navegación para establecer un atajo de teclado para el documento "Actividades.html" se utiliza:</enunciado>
+      <opciones>
+        <opcion id="a">&lt;a title="Actividad" accesskey="ab" href="actividades.html"&gt;Actividades &lt;/a&gt;</opcion>
+        <opcion id="b" correcta="true">&lt;a title="Actividad" accesskey="a" href="actividades.html"&gt;Actividades &lt;/a&gt;</opcion>
+        <opcion id="c">&lt;a title="Actividad" tabindex="1" accesskey="ab" href="actividades.html"&gt;Actividades &lt;/a&gt;</opcion>
+        <opcion id="d">Las respuestas a, b y c son correctas</opcion>
+        <opcion id="e">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>El atributo `accesskey` define una única tecla de acceso directo; valores con múltiples caracteres como "ab" no son válidos según el estándar.</explicacion>
+    </pregunta>
+    <pregunta id="html-05" tema="html">
+      <enunciado>¿Qué elementos son imprescindibles para que un documento sea HTML5 válido y sin advertencias?</enunciado>
+      <opciones>
+        <opcion id="a">Doctype, html, head, title, body, h1 y el elemento meta estableciendo la codificación de caracteres</opcion>
+        <opcion id="b">Doctype, html, head, title, body, link y el elemento meta estableciendo la codificación de caracteres</opcion>
+        <opcion id="c" correcta="true">Doctype, html, head, title, body y el elemento meta estableciendo la codificación de caracteres</opcion>
+        <opcion id="d">Las respuestas a, b y c son correctas</opcion>
+        <opcion id="e">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>Para que el validador del W3C valide un documento HTML5 sin warnings son obligatorios: &lt;!DOCTYPE html&gt;, &lt;html&gt;, &lt;head&gt;, &lt;title&gt;, &lt;meta charset="..."&gt; y &lt;body&gt; (h1 y link son opcionales).</explicacion>
+    </pregunta>
+    <pregunta id="html-06" tema="html">
+      <enunciado>¿Cuál es el tipo de documento (doctype) correcto en HTML5?</enunciado>
+      <opciones>
+        <opcion id="a">&lt;!DOCTYPE HTML5&gt;</opcion>
+        <opcion id="b" correcta="true">&lt;!DOCTYPE html&gt;</opcion>
+        <opcion id="c">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 5.0//EN" "http://www.w3.org/TR/html5/strict.dtd"&gt;</opcion>
+        <opcion id="d">Las respuestas a, b y c son correctas</opcion>
+        <opcion id="e">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>HTML5 simplificó la declaración a &lt;!DOCTYPE html&gt;, independiente de mayúsculas/minúsculas y sin referenciar ninguna DTD externa.</explicacion>
+    </pregunta>
+    <pregunta id="html-07" tema="html">
+      <enunciado>Para incluir la imagen "casatata.jpg" en un documento HTML se debe escribir:</enunciado>
+      <opciones>
+        <opcion id="a">&lt;img href="casatata.jpg" title="La casa de tata" alt="imagen de la casa de tata" /&gt;</opcion>
+        <opcion id="b" correcta="true">&lt;img src="casatata.jpg" title="La casa de tata" alt="imagen de la casa de tata" /&gt;</opcion>
+        <opcion id="c">&lt;img src="casatata.jpg" title="La casa de tata" alt="imagen de la casa de tata"&gt; &lt;/img&gt;</opcion>
+        <opcion id="d">Las respuestas a, b y c son correctas</opcion>
+        <opcion id="e">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>El elemento `&lt;img&gt;` es un elemento vacío (void element) que no admite etiqueta de cierre &lt;/img&gt; y utiliza el atributo `src` (no href) para la ruta del recurso, junto con `alt` para el texto alternativo.</explicacion>
+    </pregunta>
+    <pregunta id="html-08" tema="html">
+      <enunciado>¿Qué elementos se utilizan para la definición de listas no ordenadas, ordenadas y de definición en HTML5?</enunciado>
+      <opciones>
+        <opcion id="a">&lt;ul&gt;...&lt;/ul&gt;; &lt;ol&gt;...&lt;/ol&gt;; &lt;dl&gt;...&lt;/dl&gt;; &lt;li&gt;...&lt;/li&gt;; &lt;dd&gt;...&lt;/dd&gt;; &lt;dt&gt;..&lt;/dt&gt;</opcion>
+        <opcion id="b" correcta="true">&lt;ul&gt;...&lt;/ul&gt;; &lt;ol&gt;...&lt;/ol&gt;; &lt;dl&gt;...&lt;/dl&gt;</opcion>
+        <opcion id="c">&lt;li&gt;...&lt;/li&gt;; &lt;dd&gt;...&lt;/dd&gt;; &lt;dt&gt;..&lt;/dt&gt;</opcion>
+        <opcion id="d">Las respuestas a, b y c son correctas</opcion>
+        <opcion id="e">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>Los contenedores principales de las listas son &lt;ul&gt; (desordenada), &lt;ol&gt; (ordenada) y &lt;dl&gt; (definición/descripción), mientras que &lt;li&gt;, &lt;dt&gt; y &lt;dd&gt; son sus elementos hijos de ítem.</explicacion>
+    </pregunta>
+    <pregunta id="html-09" tema="html">
+      <enunciado>Sobre los metadatos en HTML se puede decir...</enunciado>
+      <opciones>
+        <opcion id="a">Se sitúan detrás del bloque HEAD</opcion>
+        <opcion id="b">Se definen con el elemento "meta" y un valor</opcion>
+        <opcion id="c">No tienen atributos</opcion>
+        <opcion id="d">Las respuestas a, b y c son correctas</opcion>
+        <opcion id="e" correcta="true">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>Los metadatos se ubican dentro de la sección &lt;head&gt;, poseen múltiples atributos (name, content, http-equiv, charset) y no son meramente un elemento sin atributos.</explicacion>
+    </pregunta>
+    <pregunta id="html-10" tema="html">
+      <enunciado>Elige el elemento HTML5 correcto para definir el título o encabezado de más rango dentro de una sección o en un article:</enunciado>
+      <opciones>
+        <opcion id="a">&lt;header&gt;</opcion>
+        <opcion id="b" correcta="true">&lt;h1&gt;</opcion>
+        <opcion id="c">&lt;h2&gt;</opcion>
+        <opcion id="d">Las respuestas a, b y c son correctas</opcion>
+        <opcion id="e">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>El elemento de encabezado de mayor jerarquía semántica en HTML5 (incluso dentro de secciones o artículos) es `&lt;h1&gt;` (&lt;header&gt; es un contenedor estructural, no un encabezado textual).</explicacion>
+    </pregunta>
+    <pregunta id="html-11" tema="html">
+      <enunciado>¿Qué elementos se utilizan en la definición de los componentes de una tabla simple en HTML5?</enunciado>
+      <opciones>
+        <opcion id="a">&lt;td&gt;...&lt;/td&gt;</opcion>
+        <opcion id="b">&lt;th&gt;...&lt;/th&gt;</opcion>
+        <opcion id="c">&lt;tr&gt;...&lt;/tr&gt;</opcion>
+        <opcion id="d" correcta="true">Las respuestas a, b y c son correctas</opcion>
+        <opcion id="e">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>Las celdas de datos (&lt;td&gt;), las celdas de encabezado (&lt;th&gt;) y las filas (&lt;tr&gt;) son los componentes básicos estructurales dentro del elemento &lt;table&gt;.</explicacion>
+    </pregunta>
+    <pregunta id="html-12" tema="html">
+      <enunciado>Para introducir el archivo video.mp4 en un documento HTML5:</enunciado>
+      <opciones>
+        <opcion id="a">&lt;video source="video.mp4" type="video/mp4" autoplay&gt; &lt;/video&gt;</opcion>
+        <opcion id="b">&lt;video src="video.mp4" type="video/mp3" controls autoplay /&gt;</opcion>
+        <opcion id="c">&lt;video&gt; &lt;source="video.mp4" type="video/mp4" autoplay&gt; &lt;/video&gt;</opcion>
+        <opcion id="d">Las respuestas a, b y c son correctas</opcion>
+        <opcion id="e" correcta="true">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>Todas las opciones dadas contienen errores de sintaxis (source como atributo directo en video, type erróneo video/mp3, o etiqueta &lt;source="video.mp4"&gt; sin atributo src).</explicacion>
+    </pregunta>
+    <pregunta id="html-13" tema="html">
+      <enunciado>Para establecer la información referida al autor de un documento en HTML5 se utiliza:</enunciado>
+      <opciones>
+        <opcion id="a" correcta="true">&lt;meta name="author" content="pepito grillo" /&gt;</opcion>
+        <opcion id="b">&lt;author name="pepito grillo" /&gt;</opcion>
+        <opcion id="c">&lt;meta author="pepito grillo" /&gt;</opcion>
+        <opcion id="d">Las respuestas a, b y c son correctas</opcion>
+        <opcion id="e">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>La especificación de HTML5 establece el metadato estándar de autoría mediante el elemento `&lt;meta name="author" content="Nombre"&gt;` dentro del `&lt;head&gt;`.</explicacion>
+    </pregunta>
+    <pregunta id="html-14" tema="html">
+      <enunciado>En cuanto al DOM en HTML5 se puede decir que:</enunciado>
+      <opciones>
+        <opcion id="a" correcta="true">Los elementos se representan como objetos que pueden ser manipulados con una API</opcion>
+        <opcion id="b">Solo representa etiquetas de texto estáticas sin propiedades</opcion>
+        <opcion id="c">Es una estructura binaria que sustituye completamente al archivo HTML en el servidor</opcion>
+        <opcion id="d">Las respuestas a, b y c son correctas</opcion>
+        <opcion id="e">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>El DOM (Document Object Model) es una interfaz de programación orientada a objetos donde cada nodo y elemento HTML es un objeto accesible y modificable mediante JavaScript/APIs.</explicacion>
+    </pregunta>
+    <pregunta id="html-15" tema="html">
+      <enunciado>El elemento &lt;link&gt; de HTML5 sirve para:</enunciado>
+      <opciones>
+        <opcion id="a" correcta="true">Vincular al documento HTML recursos externos</opcion>
+        <opcion id="b">Crear enlaces de hipertexto navegables en el cuerpo del documento</opcion>
+        <opcion id="c">Insertar código JavaScript en línea</opcion>
+        <opcion id="d">Las respuestas a, b y c son correctas</opcion>
+        <opcion id="e">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>`&lt;link&gt;` (ubicado en el `&lt;head&gt;`) vincula recursos externos como hojas de estilo CSS o iconos favicons (a diferencia de `&lt;a&gt;` que crea enlaces hipertextuales en el cuerpo).</explicacion>
+    </pregunta>
+    <pregunta id="css-01" tema="css">
+      <enunciado>Cuando a un elemento se le aplica la propiedad 'box-sizing: border-box', ¿qué componentes se incluyen dentro del cálculo del 'width' asignado?</enunciado>
+      <opciones>
+        <opcion id="a">Únicamente el contenido interno del elemento.</opcion>
+        <opcion id="b">El contenido y el margen exterior (margin).</opcion>
+        <opcion id="c" correcta="true">El contenido, el relleno interior (padding) y el borde (border).</opcion>
+        <opcion id="d">El contenido, el padding, el borde y el margen exterior.</opcion>
+      </opciones>
+      <explicacion>Con 'border-box', el ancho (width) abarca el contenido, el padding y el border. El margen exterior (margin) queda siempre fuera.</explicacion>
+    </pregunta>
+    <pregunta id="css-02" tema="css">
+      <enunciado>En la resolución de la cascada de CSS, cuando dos reglas aplicadas al mismo elemento tienen exactamente el mismo origen y la misma especificidad, ¿cuál prevalece?</enunciado>
+      <opciones>
+        <opcion id="a">La regla declarada en primer lugar.</opcion>
+        <opcion id="b" correcta="true">La regla declarada en último lugar en el orden de lectura (la más reciente).</opcion>
+        <opcion id="c">El navegador descarta ambas y toma el valor predeterminado del agente de usuario.</opcion>
+        <opcion id="d">La que tenga menor número de propiedades declaradas.</opcion>
+      </opciones>
+      <explicacion>A igualdad de especificidad y origen, el orden de aparición en el documento o archivo CSS decide el desempate: la última regla declarada sobrescribe a las anteriores.</explicacion>
+    </pregunta>
+    <pregunta id="css-03" tema="css">
+      <enunciado>¿Qué selector combinador de CSS selecciona únicamente los elementos 'p' que son hijos inmediatos (directos) de un elemento 'article'?</enunciado>
+      <opciones>
+        <opcion id="a">article p</opcion>
+        <opcion id="b" correcta="true">article &gt; p</opcion>
+        <opcion id="c">article + p</opcion>
+        <opcion id="d">article ~ p</opcion>
+      </opciones>
+      <explicacion>El combinador de hijo directo es '&gt;'. El espacio selecciona cualquier descendiente, '+' selecciona el hermano adyacente inmediato y '~' selecciona hermanos generales.</explicacion>
+    </pregunta>
+    <pregunta id="css-04" tema="css">
+      <enunciado>¿Qué selector de atributo en CSS selecciona todos los enlaces cuyo atributo 'href' finaliza exactamente con la extensión '.pdf'?</enunciado>
+      <opciones>
+        <opcion id="a">a[href^=".pdf"]</opcion>
+        <opcion id="b">a[href*=".pdf"]</opcion>
+        <opcion id="c" correcta="true">a[href$=".pdf"]</opcion>
+        <opcion id="d">a[href~=".pdf"]</opcion>
+      </opciones>
+      <explicacion>'[attr$=val]' comprueba que el valor termine con esa cadena. '^[val]' comprueba el inicio y '*[val]' comprueba contención en cualquier posición.</explicacion>
+    </pregunta>
+    <pregunta id="css-05" tema="css">
+      <enunciado>Cuál es la regla en CSS para establecer la familia de tipografía Times New Roman de la familia serif y garantizar que con el validador del W3C no se obtengan errores ni advertencias:</enunciado>
+      <opciones>
+        <opcion id="a">font-family: Times new Roman, serif;</opcion>
+        <opcion id="b">font-family: "Times new Roman";</opcion>
+        <opcion id="c" correcta="true">font-family: "Times new Roman", serif;</opcion>
+        <opcion id="d">Las respuestas a, b y c son correctas</opcion>
+        <opcion id="e">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>Los nombres de familias tipográficas que contienen espacios deben entrecomillarse obligatoriamente ("Times New Roman"), y el validador del W3C exige incluir al final una familia genérica de respaldo (serif).</explicacion>
+    </pregunta>
+    <pregunta id="css-06" tema="css">
+      <enunciado>Si el valor de la propiedad margin para un elemento HTML es "margin: 5px 10px 15px 10px;", se tiene:</enunciado>
+      <opciones>
+        <opcion id="a" correcta="true">margen izquierdo 10px, margen superior 5px, margen inferior 15px y margen derecho 10px</opcion>
+        <opcion id="b">margen izquierdo 5px, margen superior 10px, margen inferior 10px y margen derecho 15px</opcion>
+        <opcion id="c">margen superior 10px, margen derecho 5px, margen inferior 10px y margen izquierdo 15px</opcion>
+        <opcion id="d">Las respuestas a, b y c son correctas</opcion>
+        <opcion id="e">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>La regla nemotécnica del sentido de las agujas del reloj es: top (5px), right (10px), bottom (15px), left (10px).</explicacion>
+    </pregunta>
+    <pregunta id="css-07" tema="css">
+      <enunciado>En CSS, a:hover y a:active son...</enunciado>
+      <opciones>
+        <opcion id="a">Atributos</opcion>
+        <opcion id="b" correcta="true">Pseudoclases</opcion>
+        <opcion id="c">Pseudoelementos</opcion>
+        <opcion id="d">Las respuestas a, b y c son correctas</opcion>
+        <opcion id="e">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>`:hover` y `:active` son pseudoclases que seleccionan un elemento cuando se encuentra en un estado dinámico interactivo provocado por el usuario.</explicacion>
+    </pregunta>
+    <pregunta id="css-08" tema="css">
+      <enunciado>¿Cuál de los valores indicados para la propiedad position hace que el elemento permanezca en el flujo normal del documento?</enunciado>
+      <opciones>
+        <opcion id="a">absolute</opcion>
+        <opcion id="b">fixed</opcion>
+        <opcion id="c" correcta="true">relative</opcion>
+        <opcion id="d">Las respuestas a, b y c son correctas</opcion>
+        <opcion id="e">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>En `position: relative`, el elemento conserva su espacio reservado en el flujo normal del documento (a diferencia de absolute y fixed, que lo retiran completamente del flujo).</explicacion>
+    </pregunta>
+    <pregunta id="css-09" tema="css">
+      <enunciado>Las propiedades de estilo para un elemento h1 se pueden establecer:</enunciado>
+      <opciones>
+        <opcion id="a">Una hoja de estilo estilo.css enlazada a través del elemento &lt;link&gt; en el &lt;head&gt;</opcion>
+        <opcion id="b">Un bloque de estilos &lt;style&gt; incrustado en el &lt;head&gt;</opcion>
+        <opcion id="c">El atributo de estilo en línea style="color:red;" en la propia etiqueta &lt;h1&gt;</opcion>
+        <opcion id="d" correcta="true">Las respuestas a, b y c son correctas</opcion>
+        <opcion id="e">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>CSS admite tres vías estándar de aplicación: hojas de estilo externas (&lt;link&gt;), hojas de estilo internas incrustadas (&lt;style&gt;) y estilos en línea mediante el atributo `style`.</explicacion>
+    </pregunta>
+    <pregunta id="css-10" tema="css">
+      <enunciado>¿Qué propiedad de CSS se utiliza para especificar el comportamiento del renderizado de un elemento como bloque o en línea?</enunciado>
+      <opciones>
+        <opcion id="a" correcta="true">display</opcion>
+        <opcion id="b">visibility</opcion>
+        <opcion id="c">block-inline</opcion>
+        <opcion id="d">Las respuestas a, b y c son correctas</opcion>
+        <opcion id="e">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>La propiedad `display` determina el tipo de caja de renderizado de un elemento (block, inline, inline-block, flex, grid, none).</explicacion>
+    </pregunta>
+    <pregunta id="css-11" tema="css">
+      <enunciado>De qué color se mostrará el texto "uniovi" si tenemos en el documento HTML: &lt;p&gt;La Universidad de Oviedo se conoce como &lt;a href="..."&gt;uniovi&lt;/a&gt;&lt;/p&gt; y en la hoja de estilo las siguientes reglas: p { color: red; } p a { color: green; } a { color: blue; }</enunciado>
+      <opciones>
+        <opcion id="a">Rojo</opcion>
+        <opcion id="b" correcta="true">Verde</opcion>
+        <opcion id="c">Azul</opcion>
+        <opcion id="d">Las respuestas a, b y c son correctas</opcion>
+        <opcion id="e">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>El selector descendente `p a` tiene una especificidad de (0,0,2) al combinar dos nombres de elemento, superando al selector simple `a` cuya especificidad es de (0,0,1); por tanto, prevalece el color verde.</explicacion>
+    </pregunta>
+    <pregunta id="css-12" tema="css">
+      <enunciado>En CSS los elementos forman cajas que pueden ser manipuladas a través de las propiedades:</enunciado>
+      <opciones>
+        <opcion id="a" correcta="true">Relleno, borde y margen</opcion>
+        <opcion id="b">Anchura, color y sombra</opcion>
+        <opcion id="c">Posición, flotación y despeje</opcion>
+        <opcion id="d">Las respuestas a, b y c son correctas</opcion>
+        <opcion id="e">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>El modelo de caja estándar de CSS (box model) está compuesto fundamentalmente por el contenido, el relleno interior (padding), el borde (border) y el margen exterior (margin).</explicacion>
+    </pregunta>
+    <pregunta id="css-13" tema="css">
+      <enunciado>Si se quiere cambiar el tamaño del texto de un elemento con CSS se utiliza:</enunciado>
+      <opciones>
+        <opcion id="a" correcta="true">font-size o font</opcion>
+        <opcion id="b">text-size</opcion>
+        <opcion id="c">font-weight</opcion>
+        <opcion id="d">Las respuestas a, b y c son correctas</opcion>
+        <opcion id="e">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>La propiedad específica para el tamaño tipográfico es `font-size`, o bien la propiedad abreviada shorthand `font`.</explicacion>
+    </pregunta>
+    <pregunta id="css-14" tema="css">
+      <enunciado>En CSS, ¿qué prefijo se emplea para indicar una propiedad específica del navegador Firefox?</enunciado>
+      <opciones>
+        <opcion id="a" correcta="true">-moz-</opcion>
+        <opcion id="b">-webkit-</opcion>
+        <opcion id="c">-ms-</opcion>
+        <opcion id="d">Las respuestas a, b y c son correctas</opcion>
+        <opcion id="e">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>Los prefijos propietarios (vendor prefixes) son: `-moz-` para Mozilla Firefox (motor Gecko), `-webkit-` para Chrome/Safari y `-ms-` para Internet Explorer/Edge clásico.</explicacion>
+    </pregunta>
+    <pregunta id="css-15" tema="css">
+      <enunciado>Sobre CSS se puede decir que:</enunciado>
+      <opciones>
+        <opcion id="a" correcta="true">Es un lenguaje para describir la presentación de documentos estructurados (como HTML y XML) en diferentes medios.</opcion>
+        <opcion id="b">Existen múltiples especificaciones de módulos que son manuales de usuario que determinan como se deben establecer estilos.</opcion>
+        <opcion id="c">Promueve la utilización de implementaciones propietarias de los agentes de usuario.</opcion>
+        <opcion id="d">Crea el árbol DOM de los estilos para documentos estructurados en diferentes medios.</opcion>
+        <opcion id="e">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>Según la definición oficial del W3C, CSS (Cascading Style Sheets) es un lenguaje declarativo diseñado para describir la presentación y formato visual de documentos estructurados (HTML, XML, SVG).</explicacion>
+    </pregunta>
+    <pregunta id="css-16" tema="css">
+      <enunciado>En cuanto a los selectores en CSS, ¿cuál de las siguientes afirmaciones es correcta?</enunciado>
+      <opciones>
+        <opcion id="a" correcta="true">El selector "a[accesskey]" selecciona todos los hiperenlaces que tengan el atributo accesskey</opcion>
+        <opcion id="b">El selector "body&gt;p" selecciona todos los párrafos que estén dentro de sections, articles, header, footer y aside definidos en el body</opcion>
+        <opcion id="c">El selector "h2+h1" selecciona todos los elementos h2 que aparezcan después del elemento h1</opcion>
+        <opcion id="d">El selector "h2+h1" selecciona todos los elementos h1 que aparezcan antes del elemento h2</opcion>
+        <opcion id="e">El selector "#" selecciona todos los elementos que tengan establecido el atributo id en su definición</opcion>
+      </opciones>
+      <explicacion>El selector de atributo simple `a[accesskey]` selecciona exactamente todos los elementos `&lt;a&gt;` que posean el atributo accesskey definido, independientemente de su valor.</explicacion>
+    </pregunta>
+    <pregunta id="css-17" tema="css">
+      <enunciado>La cascada en CSS:</enunciado>
+      <opciones>
+        <opcion id="a" correcta="true">Es uno de los principios fundamentales de las hojas de estilo y permite que varias hojas de estilo afecten a un mismo documento.</opcion>
+        <opcion id="b">Produce una lista desordenada con varios valores de estilo a aplicar a cada propiedad en cada elemento del documento estructurado</opcion>
+        <opcion id="c">Permite que los elementos descendientes hereden el valor de propiedades del elemento padre.</opcion>
+        <opcion id="d">Determina el valor de estilo a aplicar a cada propiedad basándose exclusivamente en el orden de llegada de los paquetes HTTP.</opcion>
+        <opcion id="e">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>La cascada es el algoritmo central de CSS que combina reglas de múltiples orígenes (agente de usuario, usuario y autor) resolviendo conflictos mediante importancia, especificidad y orden de declaración.</explicacion>
+    </pregunta>
+    <pregunta id="css-18" tema="css">
+      <enunciado>En cuanto a la especificidad de los selectores en CSS:</enunciado>
+      <opciones>
+        <opcion id="a" correcta="true">El selector "a[accesskey]" tiene una especificidad de 011</opcion>
+        <opcion id="b">El selector "body&gt;p" tiene una especificidad de 012</opcion>
+        <opcion id="c">El selector universal "*" tiene una especificidad de 100</opcion>
+        <opcion id="d">El selector ".contenedor" tiene una especificidad de 100</opcion>
+        <opcion id="e">El selector "#contenedor" tiene una especificidad de 010</opcion>
+      </opciones>
+      <explicacion>El selector `a[accesskey]` contiene 1 selector de tipo (a) = 1 y 1 selector de atributo ([accesskey]) = 10, sumando una especificidad en notación estándar de (0, 1, 1).</explicacion>
+    </pregunta>
+    <pregunta id="css-19" tema="css">
+      <enunciado>El modelo de caja CSS generado para un elemento &lt;section&gt; de HTML5:</enunciado>
+      <opciones>
+        <opcion id="a" correcta="true">Se puede modificar mediante las propiedades margin, padding y border</opcion>
+        <opcion id="b">Se puede modificar el color del margen con la propiedad "margin: red 2em;"</opcion>
+        <opcion id="c">Se puede modificar el color del margen con la propiedad "margin-color: red;"</opcion>
+        <opcion id="d">El borde (border) de la caja se encuentra entre el relleno (padding) y el contenido (content)</opcion>
+        <opcion id="e">El relleno (padding) permite separar al elemento del resto de elementos de HTML5</opcion>
+      </opciones>
+      <explicacion>Los márgenes en CSS son siempre transparentes (no existe margin-color). El borde rodea al padding, y las tres propiedades fundamentales de dimensionamiento son margin, padding y border.</explicacion>
+    </pregunta>
+    <pregunta id="xml-01" tema="xml">
+      <enunciado>En una DTD de XML, ¿qué operador indica que un elemento hijo puede aparecer una o más veces (al menos una obligatoria)?</enunciado>
+      <opciones>
+        <opcion id="a">Asterisco (*)</opcion>
+        <opcion id="b">Signo de interrogación (?)</opcion>
+        <opcion id="c" correcta="true">Signo de adición (+)</opcion>
+        <opcion id="d">Pleca o barra vertical (|)</opcion>
+      </opciones>
+      <explicacion>En DTD: '?' significa 0 o 1; '*' significa 0 o más; '+' significa 1 o más; '|' indica alternativa (or).</explicacion>
+    </pregunta>
+    <pregunta id="xml-02" tema="xml">
+      <enunciado>En una transformación XSLT, ¿cuál es el elemento raíz obligatorio del documento de transformación?</enunciado>
+      <opciones>
+        <opcion id="a">&lt;xsl:template&gt;</opcion>
+        <opcion id="b" correcta="true">&lt;xsl:stylesheet&gt; o su sinónimo &lt;xsl:transform&gt;</opcion>
+        <opcion id="c">&lt;xsl:output&gt;</opcion>
+        <opcion id="d">&lt;xsl:root&gt;</opcion>
+      </opciones>
+      <explicacion>El documento XSLT es a su vez un archivo XML cuyo elemento raíz debe ser &lt;xsl:stylesheet&gt; o &lt;xsl:transform&gt;, conteniendo la declaración del espacio de nombres correspondiente.</explicacion>
+    </pregunta>
+    <pregunta id="xml-03" tema="xml">
+      <enunciado>¿Para qué se utiliza una sección CDATA (&lt;![CDATA[ ... ]]&gt;) en un documento XML?</enunciado>
+      <opciones>
+        <opcion id="a">Para cifrar contraseñas con algoritmos hash.</opcion>
+        <opcion id="b" correcta="true">Para incluir bloques de texto con caracteres como '&lt;' y '&amp;' sin que el analizador XML los interprete como marcas o entidades.</opcion>
+        <opcion id="c">Para enlazar una base de datos SQL relacional.</opcion>
+        <opcion id="d">Para definir estilos CSS internos en el prólogo.</opcion>
+      </opciones>
+      <explicacion>En las secciones CDATA (Character Data) el analizador XML ignora las marcas y pasa el texto plano íntegro a la aplicación sin lanzar errores sintácticos.</explicacion>
+    </pregunta>
+    <pregunta id="xml-04" tema="xml">
+      <enunciado>Sobre KML se puede afirmar que:</enunciado>
+      <opciones>
+        <opcion id="a">Es un vocabulario XML</opcion>
+        <opcion id="b">Es un estándar de datos geográficos</opcion>
+        <opcion id="c">Es un estándar de Open Geospatial Consortium (OGC)</opcion>
+        <opcion id="d" correcta="true">Las respuestas a, b y c son correctas</opcion>
+        <opcion id="e">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>KML (Keyhole Markup Language) es una gramática XML para modelar y almacenar información geográfica tridimensional, adoptada como estándar oficial por el OGC.</explicacion>
+    </pregunta>
+    <pregunta id="xml-05" tema="xml">
+      <enunciado>Sobre los DTD (Document Type Definition) se puede decir:</enunciado>
+      <opciones>
+        <opcion id="a">Tienen sintaxis XML</opcion>
+        <opcion id="b">Permiten definir tipos de datos numéricos complejos y rangos</opcion>
+        <opcion id="c">Soportan espacios de nombres (namespaces) de forma nativa</opcion>
+        <opcion id="d">Las respuestas a, b y c son correctas</opcion>
+        <opcion id="e" correcta="true">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>Las DTDs no usan sintaxis XML (provienen de SGML), carecen de un sistema rico de tipos de datos (casi todo es texto PCDATA/CDATA) y no comprenden espacios de nombres de XML.</explicacion>
+    </pregunta>
+    <pregunta id="xml-06" tema="xml">
+      <enunciado>Diferencias entre DTDs y XML Schemas (XSD):</enunciado>
+      <opciones>
+        <opcion id="a" correcta="true">Los XML Schema se pueden representar con un árbol n-ario y tienen sintaxis XML</opcion>
+        <opcion id="b">Los DTDs admiten herencia orientada a objetos y tipos abstractos</opcion>
+        <opcion id="c">Los XML Schemas no permiten validar cardinalidades numéricas precisas</opcion>
+        <opcion id="d">Las respuestas a, b y c son correctas</opcion>
+        <opcion id="e">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>XML Schema se redacta en formato XML estándar y por ende se estructura como un árbol n-ario manipulable con las mismas herramientas y analizadores DOM que cualquier documento XML.</explicacion>
+    </pregunta>
+    <pregunta id="xml-07" tema="xml">
+      <enunciado>Sobre KML se puede decir:</enunciado>
+      <opciones>
+        <opcion id="a">Es un estándar del W3C</opcion>
+        <opcion id="b">Solamente permite representar un único punto en un mapa</opcion>
+        <opcion id="c">No es un estándar</opcion>
+        <opcion id="d">Las respuestas a, b y c son correctas</opcion>
+        <opcion id="e" correcta="true">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>KML es un estándar oficial del OGC (no del W3C) y permite modelar polígonos, capas, modelos 3D y trayectorias complejas, no únicamente un solo punto.</explicacion>
+    </pregunta>
+    <pregunta id="xml-08" tema="xml">
+      <enunciado>Sobre KMZ se puede decir que:</enunciado>
+      <opciones>
+        <opcion id="a" correcta="true">Es un KML empaquetado usando ZIP</opcion>
+        <opcion id="b">Es una versión binaria cifrada no descomprimible</opcion>
+        <opcion id="c">Sustituyó a SVG en el consorcio W3C</opcion>
+        <opcion id="d">Las respuestas a, b y c son correctas</opcion>
+        <opcion id="e">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>Un archivo KMZ es un fichero comprimido en formato ZIP que contiene un archivo doc.kml principal junto con sus recursos asociados (imágenes, iconos, texturas 3D).</explicacion>
+    </pregunta>
+    <pregunta id="xml-09" tema="xml">
+      <enunciado>Sobre XML se puede decir:</enunciado>
+      <opciones>
+        <opcion id="a">Es un metalenguaje que permite definir lenguajes de marcado específicos</opcion>
+        <opcion id="b">Es un estándar desarrollado y mantenido por el W3C</opcion>
+        <opcion id="c">Es extensible y separa el contenido de su presentación</opcion>
+        <opcion id="d" correcta="true">Las respuestas a, b y c son correctas</opcion>
+        <opcion id="e">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>XML (Extensible Markup Language) es un metalenguaje estándar del W3C que permite la creación de vocabularios a medida, orientándose a estructurar datos independientemente de la vista.</explicacion>
+    </pregunta>
+    <pregunta id="xml-10" tema="xml">
+      <enunciado>El procesamiento de un documento XML se hace:</enunciado>
+      <opciones>
+        <opcion id="a" correcta="true">Recorriendo el árbol n-ario desde la raíz</opcion>
+        <opcion id="b">Como un vector unidimensional en orden descendente estricto</opcion>
+        <opcion id="c">Exclusivamente de forma aleatoria sin jerarquía</opcion>
+        <opcion id="d">Las respuestas a, b y c son correctas</opcion>
+        <opcion id="e">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>Cualquier documento XML bien formado posee un único elemento raíz del que derivan nodos hijos formando un árbol n-ario jerárquico.</explicacion>
+    </pregunta>
+    <pregunta id="xml-11" tema="xml">
+      <enunciado>Sobre XSLT se puede decir:</enunciado>
+      <opciones>
+        <opcion id="a">Permite transformar documentos XML en otros documentos XML</opcion>
+        <opcion id="b">Permite transformar documentos XML en HTML o texto plano</opcion>
+        <opcion id="c">Es un lenguaje declarativo basado en plantillas con sintaxis XML</opcion>
+        <opcion id="d" correcta="true">Las respuestas a, b y c son correctas</opcion>
+        <opcion id="e">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>XSLT (Extensible Stylesheet Language Transformations) transforma estructuras XML hacia XML, HTML, SVG o texto aplicando reglas de plantilla declarativas.</explicacion>
+    </pregunta>
+    <pregunta id="xml-12" tema="xml">
+      <enunciado>Sobre SVG (Scalable Vector Graphics) se puede decir:</enunciado>
+      <opciones>
+        <opcion id="a">Es un vocabulario XML</opcion>
+        <opcion id="b">Es un estándar del W3C</opcion>
+        <opcion id="c">Permite crear y describir gráficos vectoriales bidimensionales</opcion>
+        <opcion id="d" correcta="true">Las respuestas a, b y c son correctas</opcion>
+        <opcion id="e">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>SVG es una recomendación del W3C basada en XML para describir gráficos vectoriales 2D interactivos y escalables sin pérdida de resolución.</explicacion>
+    </pregunta>
+    <pregunta id="xml-13" tema="xml">
+      <enunciado>Sobre SVG se puede decir que:</enunciado>
+      <opciones>
+        <opcion id="a" correcta="true">Permite incrustarse directamente en el código HTML</opcion>
+        <opcion id="b">Permite incrustarse en el código CSS como lenguaje de programación</opcion>
+        <opcion id="c">Solo funciona mediante applets compilados</opcion>
+        <opcion id="d">Las respuestas a, b y c son correctas</opcion>
+        <opcion id="e">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>HTML5 introdujo el soporte nativo de SVG en línea (inline SVG), permitiendo insertar etiquetas &lt;svg&gt; directamente en el código HTML sin complementos.</explicacion>
+    </pregunta>
+    <pregunta id="xml-14" tema="xml">
+      <enunciado>Sobre el contenido y nombres de los elementos en XML se puede decir:</enunciado>
+      <opciones>
+        <opcion id="a">Son uno o más caracteres sin espacios en blanco</opcion>
+        <opcion id="b">Pueden incluir caracteres Unicode</opcion>
+        <opcion id="c">Son sensibles a mayúsculas y minúsculas (case-sensitive)</opcion>
+        <opcion id="d" correcta="true">Las respuestas a, b y c son correctas</opcion>
+        <opcion id="e">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>Los nombres de elemento en XML no pueden contener espacios en blanco, respetan la distinción entre mayúsculas y minúsculas y admiten caracteres Unicode válidos.</explicacion>
+    </pregunta>
+    <pregunta id="xml-15" tema="xml">
+      <enunciado>En XPath qué significa la expresión: //X[last()][@Y="Z"]</enunciado>
+      <opciones>
+        <opcion id="a">Primeros hijos X con atributo Y = "Z"</opcion>
+        <opcion id="b" correcta="true">Últimos hijos X con atributo Y = "Z"</opcion>
+        <opcion id="c">Todos los descendientes X que no tengan atributo Y</opcion>
+        <opcion id="d">Las respuestas a, b y c son correctas</opcion>
+        <opcion id="e">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>`//X` selecciona nodos X en cualquier nivel, `[last()]` restringe al último nodo hermano X y `[@Y="Z"]` comprueba que posea el atributo Y con valor "Z".</explicacion>
+    </pregunta>
+    <pregunta id="xml-16" tema="xml">
+      <enunciado>En XML Schema (XSD) se utiliza el tipo estándar xs:date para representar una fecha válida con formato ISO 8601; ¿cuál es un ejemplo válido?</enunciado>
+      <opciones>
+        <opcion id="a" correcta="true">&lt;inicio&gt;2021-10-21&lt;/inicio&gt;</opcion>
+        <opcion id="b">&lt;inicio&gt;21/10/2021&lt;/inicio&gt;</opcion>
+        <opcion id="c">&lt;inicio&gt;2021-10-21T00:00:00&lt;/inicio&gt;</opcion>
+        <opcion id="d">&lt;inicio&gt;Octubre 21, 2021&lt;/inicio&gt;</opcion>
+        <opcion id="e">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>El tipo predefinido `xs:date` exige estrictamente el formato internacional `AAAA-MM-DD` (ej. 2021-10-21).</explicacion>
+    </pregunta>
+    <pregunta id="xml-17" tema="xml">
+      <enunciado>Si en XML Schema se quiere definir un elemento que contenga un lapso de tiempo o duración temporal se utiliza el tipo predefinido:</enunciado>
+      <opciones>
+        <opcion id="a" correcta="true">xs:duration</opcion>
+        <opcion id="b">xs:timeSpan</opcion>
+        <opcion id="c">xs:interval</opcion>
+        <opcion id="d">xs:period</opcion>
+        <opcion id="e">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>El tipo de datos estándar para duraciones temporales en XML Schema es `xs:duration` (siguiendo el patrón PnYnMnDTnHnMnS).</explicacion>
+    </pregunta>
+    <pregunta id="xml-18" tema="xml">
+      <enunciado>En XML Schema, ¿qué representa el valor de duración "P1Y7M29DT10H"?</enunciado>
+      <opciones>
+        <opcion id="a" correcta="true">Indica una duración de 1 año, 7 meses, 29 días y 10 horas</opcion>
+        <opcion id="b">Indica una fecha exacta: 29 de julio de 2001 a las 10:00</opcion>
+        <opcion id="c">Indica una periodicidad de 17 días y 29 minutos</opcion>
+        <opcion id="d">Las respuestas a, b y c son correctas</opcion>
+        <opcion id="e">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>En formato ISO de duración XML: P indica periodo, 1Y = 1 año, 7M = 7 meses, 29D = 29 días, T separa la hora y 10H = 10 horas.</explicacion>
+    </pregunta>
+    <pregunta id="xml-19" tema="xml">
+      <enunciado>Sobre XPath se puede afirmar que:</enunciado>
+      <opciones>
+        <opcion id="a" correcta="true">Identifica los nodos del árbol XML</opcion>
+        <opcion id="b">Es un lenguaje derivado de HTML</opcion>
+        <opcion id="c">No es un estándar del W3C</opcion>
+        <opcion id="d">Las respuestas a, b y c son correctas</opcion>
+        <opcion id="e">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>XPath (XML Path Language) es una recomendación del W3C cuya función principal es navegar y seleccionar nodos y conjuntos de nodos dentro de un documento XML modelado como árbol.</explicacion>
+    </pregunta>
+    <pregunta id="xml-20" tema="xml">
+      <enunciado>Sobre el uso de espacios de nombres (namespaces) en XML se puede decir:</enunciado>
+      <opciones>
+        <opcion id="a" correcta="true">Evita el problema de la homonimia en las etiquetas</opcion>
+        <opcion id="b">Solamente se puede utilizar para esquemas XML</opcion>
+        <opcion id="c">Si se utiliza para cualquier texto genera documentos bien formados, pero no válidos</opcion>
+        <opcion id="d">No se pueden utilizar con cualquier tipo de documento XML</opcion>
+        <opcion id="e">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>Los namespaces resuelven el conflicto de nombres (homonimia o colisión de etiquetas idénticas provenientes de distintos vocabularios, como &lt;table&gt; en HTML y &lt;table&gt; en mobiliario) mediante URIs identificativas.</explicacion>
+    </pregunta>
+    <pregunta id="xml-21" tema="xml">
+      <enunciado>Sobre el lenguaje XMI (XML Metadata Interchange) se puede decir:</enunciado>
+      <opciones>
+        <opcion id="a" correcta="true">Es utilizado en el intercambio de metadatos de diseños de software en UML</opcion>
+        <opcion id="b">Sustituyó a los DTDs en HTML5</opcion>
+        <opcion id="c">Es un formato gráfico binario para mapas</opcion>
+        <opcion id="d">Las respuestas a, b y c son correctas</opcion>
+        <opcion id="e">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>XMI es un estándar del OMG (Object Management Group) basado en XML para serializar e intercambiar modelos de software, diagramas UML y metadatos entre distintas herramientas CASE.</explicacion>
+    </pregunta>
+    <pregunta id="xml-22" tema="xml">
+      <enunciado>En XML Schema con respecto a la derivación de tipos:</enunciado>
+      <opciones>
+        <opcion id="a" correcta="true">Los tipos derivados pueden usarse en los mismos sitios que el tipo base</opcion>
+        <opcion id="b">Solamente se pueden usar con tipos simples</opcion>
+        <opcion id="c">No permiten la herencia</opcion>
+        <opcion id="d">No se puede limitar la derivación de tipos abstractos con final="restriction"</opcion>
+        <opcion id="e">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>En XML Schema opera el principio de sustitución polimórfica: un tipo derivado (por extensión o restricción) puede ser utilizado en cualquier contexto donde sea válido el tipo base.</explicacion>
+    </pregunta>
+    <pregunta id="xml-23" tema="xml">
+      <enunciado>En XML Schema, ¿cómo se puede limitar o bloquear la derivación de tipos abstractos?</enunciado>
+      <opciones>
+        <opcion id="a" correcta="true">Se puede limitar la derivación de tipos abstractos con final="restriction" (o final="#all")</opcion>
+        <opcion id="b">No es posible bloquear la derivación en XSD</opcion>
+        <opcion id="c">Mediante la cláusula abstract="false" en los elementos hijos</opcion>
+        <opcion id="d">Las respuestas a, b y c son correctas</opcion>
+        <opcion id="e">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>El atributo `final` en un complexType o simpleType previene la derivación por extensión, restricción o todas (`#all`).</explicacion>
+    </pregunta>
+    <pregunta id="xml-24" tema="xml">
+      <enunciado>Sobre la especificación XML Signature (XMLDSig) se puede decir:</enunciado>
+      <opciones>
+        <opcion id="a" correcta="true">Es utilizado para información de firma electrónica en documentos XML</opcion>
+        <opcion id="b">Sustituye a los certificados SSL en los servidores</opcion>
+        <opcion id="c">Es una utilidad exclusiva de navegadores Firefox</opcion>
+        <opcion id="d">Las respuestas a, b y c son correctas</opcion>
+        <opcion id="e">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>XML Signature define una sintaxis XML y reglas de procesamiento para la autenticación e integridad de datos digitales mediante firmas electrónicas sobre recursos XML.</explicacion>
+    </pregunta>
+    <pregunta id="xml-25" tema="xml">
+      <enunciado>Una sección CDATA (Character Data) en un documento XML:</enunciado>
+      <opciones>
+        <opcion id="a" correcta="true">Permite especificar datos, utilizando cualquier carácter, especial o no, sin que se interprete como marcado XML</opcion>
+        <opcion id="b">Es obligatoria para todos los elementos de tipo fecha</opcion>
+        <opcion id="c">Comprime el contenido en formato binario</opcion>
+        <opcion id="d">Las respuestas a, b y c son correctas</opcion>
+        <opcion id="e">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>Los bloques `&lt;![CDATA[ ... ]]&gt;` indican al analizador XML que el texto contenido debe tratarse como caracteres puros sin interpretar símbolos como `&lt;` o `&amp;` como marcas de etiqueta.</explicacion>
+    </pregunta>
+    <pregunta id="xml-26" tema="xml">
+      <enunciado>El analizador DOM (Document Object Model) para procesar XML:</enunciado>
+      <opciones>
+        <opcion id="a" correcta="true">Permite acceder y manipular el árbol DOM de un documento XML en memoria</opcion>
+        <opcion id="b">Procesa el documento secuencialmente línea por línea sin cargarlo en memoria (orientado a eventos)</opcion>
+        <opcion id="c">Solo funciona con documentos HTML, no con XML puro</opcion>
+        <opcion id="d">Las respuestas a, b y c son correctas</opcion>
+        <opcion id="e">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>El analizador basado en DOM construye en memoria el árbol completo del documento XML, facilitando la navegación bidireccional y la modificación de nodos (a diferencia de SAX, que es un analizador secuencial orientado a eventos).</explicacion>
+    </pregunta>
+    <pregunta id="xml-27" tema="xml">
+      <enunciado>En el vocabulario XSLT, ¿para qué se utiliza el elemento &lt;xsl:variable&gt;?</enunciado>
+      <opciones>
+        <opcion id="a" correcta="true">Se pueden usar para definir valores y constantes calculadas durante la transformación</opcion>
+        <opcion id="b">Permite modificar valores en bucles de manera imperativa como en C o Java</opcion>
+        <opcion id="c">Es el elemento raíz obligatorio de cualquier hoja XSLT</opcion>
+        <opcion id="d">Las respuestas a, b y c son correctas</opcion>
+        <opcion id="e">Las respuestas a, b y c son incorrectas</opcion>
+      </opciones>
+      <explicacion>En XSLT las variables declaradas con `&lt;xsl:variable&gt;` son inmutables (se comportan como constantes o bindings funcionales), no pudiendo reasignarse dentro del mismo ámbito.</explicacion>
+    </pregunta>
+    <pregunta id="adaptabilidad-01" tema="adaptabilidad">
+      <enunciado>En el diseño fluido, ¿a qué hace referencia la unidad relativa 'rem'?</enunciado>
+      <opciones>
+        <opcion id="a">Al tamaño de fuente del contenedor padre inmediato.</opcion>
+        <opcion id="b" correcta="true">Al tamaño de fuente del elemento raíz del documento (&lt;html&gt;).</opcion>
+        <opcion id="c">Al ancho total visible de la ventana gráfica.</opcion>
+        <opcion id="d">A la resolución de píxeles por pulgada de la pantalla.</opcion>
+      </opciones>
+      <explicacion>'rem' significa 'root em'; es relativa al font-size del elemento raíz (&lt;html&gt;), evitando el anidamiento exponencial que puede ocurrir con 'em'.</explicacion>
+    </pregunta>
+    <pregunta id="adaptabilidad-02" tema="adaptabilidad">
+      <enunciado>Para que el diseño sea adaptable el tamaño de las imágenes debe ser definido por medio de:</enunciado>
+      <opciones>
+        <opcion id="a">px</opcion>
+        <opcion id="b">cm</opcion>
+        <opcion id="c" correcta="true">%</opcion>
+        <opcion id="d">Todas las respuestas anteriores son correctas</opcion>
+        <opcion id="e">Ninguna de las respuestas anteriores es correcta</opcion>
+      </opciones>
+      <explicacion>En diseño web adaptable (RWD) las imágenes fluidas deben expresarse en unidades porcentuales (como max-width: 100% o width en %) para adaptarse de manera elástica a las dimensiones de su contenedor.</explicacion>
+    </pregunta>
+    <pregunta id="adaptabilidad-03" tema="adaptabilidad">
+      <enunciado>La metáfora de los fluidos se utiliza para:</enunciado>
+      <opciones>
+        <opcion id="a">Para maquetar tablas</opcion>
+        <opcion id="b">Para estirar imágenes</opcion>
+        <opcion id="c" correcta="true">Para técnicas de diseño adaptable</opcion>
+        <opcion id="d">Todas las respuestas anteriores son correctas</opcion>
+        <opcion id="e">Ninguna de las respuestas anteriores es correcta</opcion>
+      </opciones>
+      <explicacion>La metáfora de los fluidos describe rejillas, tipografías e imágenes que fluyen y llenan el espacio disponible según el recipiente (pantalla o ventana gráfica), base del diseño líquido y adaptable.</explicacion>
+    </pregunta>
+    <pregunta id="adaptabilidad-04" tema="adaptabilidad">
+      <enunciado>Para asegurar la usabilidad en dispositivos móviles, es necesario realizar pruebas:</enunciado>
+      <opciones>
+        <opcion id="a">De usabilidad y adaptabilidad</opcion>
+        <opcion id="b">Sobre distinto hardware</opcion>
+        <opcion id="c">Sobre distintos sistemas operativos</opcion>
+        <opcion id="d">Sobre distintos navegadores o agentes de usuario</opcion>
+        <opcion id="e" correcta="true">Todas las respuestas anteriores son correctas</opcion>
+      </opciones>
+      <explicacion>La fragmentación del ecosistema móvil exige realizar pruebas combinadas sobre hardware diverso, variedad de resoluciones, múltiples sistemas operativos (iOS, Android) y diferentes navegadores.</explicacion>
+    </pregunta>
+    <pregunta id="adaptabilidad-05" tema="adaptabilidad">
+      <enunciado>Para que el diseño sea adaptable el tamaño de las fuentes debe ser definido por medio de:</enunciado>
+      <opciones>
+        <opcion id="a">px</opcion>
+        <opcion id="b">cm</opcion>
+        <opcion id="c" correcta="true">em</opcion>
+        <opcion id="d">Todas las respuestas anteriores son correctas</opcion>
+        <opcion id="e">Ninguna de las respuestas anteriores es correcta</opcion>
+      </opciones>
+      <explicacion>La unidad relativa `em` escala en función del tamaño de fuente del elemento padre o raíz, permitiendo que la tipografía responda a las preferencias del usuario y a las dimensiones de la pantalla.</explicacion>
+    </pregunta>
+    <pregunta id="adaptabilidad-06" tema="adaptabilidad">
+      <enunciado>Sobre los navegadores o agentes de usuarios para los dispositivos móviles:</enunciado>
+      <opciones>
+        <opcion id="a">Son los mismos que en los dispositivos de escritorio</opcion>
+        <opcion id="b">Son los mismos en todos los sistemas operativos</opcion>
+        <opcion id="c" correcta="true">Son versiones adaptadas de los navegadores de escritorio</opcion>
+        <opcion id="d">Todas las respuestas anteriores son correctas</opcion>
+        <opcion id="e">Ninguna de las respuestas anteriores es correcta</opcion>
+      </opciones>
+      <explicacion>Los navegadores móviles derivan de los motores de renderizado de escritorio pero adaptados específicamente para restricciones de batería, ancho de banda, memoria y control táctil.</explicacion>
+    </pregunta>
+    <pregunta id="adaptabilidad-07" tema="adaptabilidad">
+      <enunciado>Sobre las diferencias de usabilidad en dispositivos móviles se puede decir:</enunciado>
+      <opciones>
+        <opcion id="a">Los principios de usabilidad son los mismos que en usabilidad web</opcion>
+        <opcion id="b">Los usuarios tienen una iteración más rápida</opcion>
+        <opcion id="c">Los usuarios leen menos que en otros dispositivos</opcion>
+        <opcion id="d" correcta="true">Todas las respuestas anteriores son correctas</opcion>
+        <opcion id="e">Ninguna de las respuestas anteriores es correcta</opcion>
+      </opciones>
+      <explicacion>En dispositivos móviles se mantienen los axiomas de usabilidad pero adaptados al contexto: interacción por toques rápidos, búsqueda de inmediatez y menor tolerancia a lecturas extensas.</explicacion>
+    </pregunta>
+    <pregunta id="adaptabilidad-08" tema="adaptabilidad">
+      <enunciado>Sobre el diseño web adaptable se puede decir:</enunciado>
+      <opciones>
+        <opcion id="a">Es un caso particular de la usabilidad</opcion>
+        <opcion id="b">Ha ido evolucionando históricamente hasta la actualidad</opcion>
+        <opcion id="c">Los sitios web se ajustan automáticamente a cualquier resolución</opcion>
+        <opcion id="d" correcta="true">Todas las respuestas anteriores son correctas</opcion>
+        <opcion id="e">Ninguna de las respuestas anteriores es correcta</opcion>
+      </opciones>
+      <explicacion>El diseño web adaptable es una evolución histórica orientada a garantizar usabilidad en cualquier resolución mediante fluid grids, media queries y recursos flexibles.</explicacion>
+    </pregunta>
+    <pregunta id="adaptabilidad-09" tema="adaptabilidad">
+      <enunciado>Las técnicas de diseño adaptable se inician con:</enunciado>
+      <opciones>
+        <opcion id="a">HTML 1.1</opcion>
+        <opcion id="b">HTML 4.0</opcion>
+        <opcion id="c" correcta="true">HTML 5</opcion>
+        <opcion id="d">Todas las respuestas anteriores son correctas</opcion>
+        <opcion id="e">Ninguna de las respuestas anteriores es correcta</opcion>
+      </opciones>
+      <explicacion>El estándar HTML5 (junto con CSS3) proporcionó las bases tecnológicas (etiqueta meta viewport, elementos semánticos y soporte CSS) que posibilitaron la concepción del diseño adaptable.</explicacion>
+    </pregunta>
+    <pregunta id="adaptabilidad-10" tema="adaptabilidad">
+      <enunciado>Sobre las ventajas de la adaptabilidad web se puede decir:</enunciado>
+      <opciones>
+        <opcion id="a">Mejoran la experiencia del usuario</opcion>
+        <opcion id="b">Reducen los costes de creación y mantenimiento</opcion>
+        <opcion id="c">Evita tener que desarrollar aplicaciones específicas para cada sistema operativo</opcion>
+        <opcion id="d" correcta="true">Todas las respuestas anteriores son correctas</opcion>
+        <opcion id="e">Ninguna de las respuestas anteriores es correcta</opcion>
+      </opciones>
+      <explicacion>Adoptar un sitio adaptable permite ofrecer una experiencia óptima universal con una sola base de código, reduciendo costes de desarrollo frente a crear versiones y apps nativas aisladas para cada plataforma.</explicacion>
+    </pregunta>
+    <pregunta id="adaptabilidad-11" tema="adaptabilidad">
+      <enunciado>Los conceptos actuales de diseño web adaptable se han definido por hitos de la historia de la computación en el año:</enunciado>
+      <opciones>
+        <opcion id="a">1990</opcion>
+        <opcion id="b">1996</opcion>
+        <opcion id="c">2000</opcion>
+        <opcion id="d" correcta="true">2007</opcion>
+        <opcion id="e">Ningún año de los anteriores</opcion>
+      </opciones>
+      <explicacion>En 2007, con la presentación del primer iPhone y la llegada masiva de smartphones con navegación web completa en pantallas reducidas, se transformó radicalmente el paradigma de diseño hacia la adaptabilidad.</explicacion>
+    </pregunta>
+    <pregunta id="usabilidad-01" tema="usabilidad">
+      <enunciado>¿Cómo debemos guiar al usuario cuando navega por nuestro sitio Web?</enunciado>
+      <opciones>
+        <opcion id="a">Cambiando la CSS en cada cambio de página para que se modifiquen los colores de fondo</opcion>
+        <opcion id="b">Incorporando gran cantidad de ventanas emergentes</opcion>
+        <opcion id="c" correcta="true">Indicando donde nos encontramos</opcion>
+        <opcion id="d">Todas las respuestas anteriores son correctas</opcion>
+      </opciones>
+      <explicacion>En diseño de navegación usable es un principio básico informar permanentemente al usuario de su ubicación dentro de la estructura web (mediante migas de pan, estados activos en el menú o encabezados claros) para evitar la desorientación.</explicacion>
+    </pregunta>
+    <pregunta id="usabilidad-02" tema="usabilidad">
+      <enunciado>Sobre Usabilidad:</enunciado>
+      <opciones>
+        <opcion id="a">Toda la funcionalidad del sitio Web debe ser correcta</opcion>
+        <opcion id="b">El modelo mental del usuario debe percibir el sentido del sitio Web</opcion>
+        <opcion id="c">La curva de aprendizaje del usuario debe ser lo más rápida posible</opcion>
+        <opcion id="d" correcta="true">Todas las respuestas anteriores son correctas</opcion>
+      </opciones>
+      <explicacion>La usabilidad abarca la corrección funcional, la alineación con el modelo mental y expectativas del usuario, y la reducción al mínimo del tiempo y esfuerzo de aprendizaje.</explicacion>
+    </pregunta>
+    <pregunta id="usabilidad-03" tema="usabilidad">
+      <enunciado>¿Cómo podemos favorecer la usabilidad de un sitio Web?</enunciado>
+      <opciones>
+        <opcion id="a" correcta="true">Con un buscador</opcion>
+        <opcion id="b">Usar tablas para maquetar</opcion>
+        <opcion id="c">Usar el elemento de HTML iFrame</opcion>
+        <opcion id="d">Todas las respuestas anteriores son correctas</opcion>
+      </opciones>
+      <explicacion>Un motor de búsqueda interno es una herramienta esencial que permite a los usuarios encontrar contenidos de forma directa y autónoma. El uso de tablas para diseño o de iframes degrada la experiencia de usuario y la accesibilidad.</explicacion>
+    </pregunta>
+    <pregunta id="usabilidad-04" tema="usabilidad">
+      <enunciado>¿Cómo se utiliza la metáfora de un semáforo en un sitio Web?</enunciado>
+      <opciones>
+        <opcion id="a">Solo con colores</opcion>
+        <opcion id="b" correcta="true">Con colores y etiquetas</opcion>
+        <opcion id="c">No existen metáforas de semáforo</opcion>
+        <opcion id="d">Ninguna de las respuestas anteriores son correctas</opcion>
+      </opciones>
+      <explicacion>Las metáforas visuales de advertencia como el semáforo nunca deben depender únicamente del código de color (rojo/verde), sino complementarse obligatoriamente con etiquetas textuales e iconos diferenciados para no excluir a personas con daltonismo.</explicacion>
+    </pregunta>
+    <pregunta id="usabilidad-05" tema="usabilidad">
+      <enunciado>¿Cuáles son las barreras para el acceso a la Web de personas con ceguera?</enunciado>
+      <opciones>
+        <opcion id="a">Tablas que solamente se emplean para maquetar páginas</opcion>
+        <opcion id="b">Imágenes sin texto alternativo</opcion>
+        <opcion id="c">Usar Frames o marcos</opcion>
+        <opcion id="d" correcta="true">Todas las respuestas anteriores son correctas</opcion>
+      </opciones>
+      <explicacion>Los lectores de pantalla requieren estructura semántica: tablas de maquetación generan lecturas caóticas, imágenes sin atributo alt ocultan información y los marcos rompen la navegación lineal del sintetizador.</explicacion>
+    </pregunta>
+    <pregunta id="usabilidad-06" tema="usabilidad">
+      <enunciado>¿Siempre se puede encontrar una metáfora para el diseño de un sitio Web?</enunciado>
+      <opciones>
+        <opcion id="a">Cierto</opcion>
+        <opcion id="b" correcta="true">Falso</opcion>
+        <opcion id="c">No hay metáforas en la Web</opcion>
+        <opcion id="d">Ninguna de las respuestas anteriores es correcta</opcion>
+      </opciones>
+      <explicacion>Falso: existen tareas y conceptos informáticos abstractos para los cuales no existe una correspondencia adecuada en el mundo real; forzar una metáfora errónea confunde al usuario en lugar de guiarlo.</explicacion>
+    </pregunta>
+    <pregunta id="usabilidad-07" tema="usabilidad">
+      <enunciado>En la página principal de un sitio web se debe colocar:</enunciado>
+      <opciones>
+        <opcion id="a">Saludos de bienvenida a los usuarios</opcion>
+        <opcion id="b">Textualmente lo buenos que somos los que hicimos el sitio Web</opcion>
+        <opcion id="c">Videos que deben visualizar obligatoriamente cada vez que entre un usuario al sitio web</opcion>
+        <opcion id="d" correcta="true">Todas las respuestas anteriores son incorrectas</opcion>
+      </opciones>
+      <explicacion>Las buenas prácticas de usabilidad indican que la home debe exponer inmediatamente qué ofrece el sitio y cómo acceder a los servicios, prescindiendo de saludos triviales ("Bienvenido"), autobombo o vídeos obligatorios que frustran al visitante.</explicacion>
+    </pregunta>
+    <pregunta id="usabilidad-08" tema="usabilidad">
+      <enunciado>Sobre Experiencia de Usuario (UX), se puede decir:</enunciado>
+      <opciones>
+        <opcion id="a">Es una parte de la Usabilidad</opcion>
+        <opcion id="b">Es una parte de la Accesibilidad</opcion>
+        <opcion id="c">Es una parte de la Adaptabilidad</opcion>
+        <opcion id="d" correcta="true">Todas las respuestas anteriores son incorrectas</opcion>
+      </opciones>
+      <explicacion>La Experiencia de Usuario es la disciplina global y holística que engloba factores emocionales, usabilidad, accesibilidad, utilidad y percepción general. La usabilidad es una parte de la UX, no al revés.</explicacion>
+    </pregunta>
+    <pregunta id="usabilidad-09" tema="usabilidad">
+      <enunciado>¿Qué es la navegación constante o global?</enunciado>
+      <opciones>
+        <opcion id="a">Navegar por el sitio web a una velocidad constante, parando a reflexionar sobre los clics elegidos</opcion>
+        <opcion id="b">Navegar siempre con el mismo navegador</opcion>
+        <opcion id="c" correcta="true">Conjunto de elementos que aparecen en todas las páginas del sitio</opcion>
+        <opcion id="d">Todas las respuestas anteriores son correctas</opcion>
+      </opciones>
+      <explicacion>La navegación constante o global está constituida por la barra y enlaces principales que se mantienen fijos e idénticos en todas las páginas del portal, ofreciendo una estructura de referencia estable.</explicacion>
+    </pregunta>
+    <pregunta id="usabilidad-10" tema="usabilidad">
+      <enunciado>Sobre los carruseles en sitios Web:</enunciado>
+      <opciones>
+        <opcion id="a">Permiten ahorrar espacio</opcion>
+        <opcion id="b">Son muy usables</opcion>
+        <opcion id="c">Son la última moda en interfaz web</opcion>
+        <opcion id="d" correcta="true">Todas las respuestas anteriores son incorrectas</opcion>
+      </opciones>
+      <explicacion>Estudios empíricos de usabilidad (como los de Nielsen Norman Group) han demostrado que los carruseles automáticos sufren de ceguera ante banners, tienen porcentajes de clics ínfimos más allá de la primera diapositiva y quitan el control al usuario.</explicacion>
+    </pregunta>
+    <pregunta id="accesibilidad-01" tema="accesibilidad">
+      <enunciado>Sobre la Usabilidad Universal se puede decir:</enunciado>
+      <opciones>
+        <opcion id="a">Es un caso particular de la adaptabilidad</opcion>
+        <opcion id="b">Es la usabilidad desplegada en la nube</opcion>
+        <opcion id="c">Los sitios web se ajustan automáticamente a cualquier resolución</opcion>
+        <opcion id="d">Todas las respuestas anteriores son correctas</opcion>
+        <opcion id="e" correcta="true">Ninguna de las respuestas anteriores es correcta</opcion>
+      </opciones>
+      <explicacion>La usabilidad universal persigue el diseño de productos y entornos de modo que puedan ser utilizados por todas las personas en la mayor medida posible sin adaptaciones especializadas; ninguna de las opciones descriptivas dadas es correcta.</explicacion>
+    </pregunta>
+    <pregunta id="accesibilidad-02" tema="accesibilidad">
+      <enunciado>Para que el diseño sea accesible el tamaño de las fuentes debe ser definido por medio de:</enunciado>
+      <opciones>
+        <opcion id="a">px</opcion>
+        <opcion id="b">cm</opcion>
+        <opcion id="c" correcta="true">em</opcion>
+        <opcion id="d">Todas las respuestas anteriores son correctas</opcion>
+        <opcion id="e">Ninguna de las respuestas anteriores es correcta</opcion>
+      </opciones>
+      <explicacion>Para cumplir las pautas de accesibilidad el texto debe permitir su reescalado sin romperse; las unidades relativas `em` respetan la configuración de tamaño de fuente elegida por el usuario con dificultades visuales.</explicacion>
+    </pregunta>
+    <pregunta id="accesibilidad-03" tema="accesibilidad">
+      <enunciado>Sobre AENOR se puede decir:</enunciado>
+      <opciones>
+        <opcion id="a">Está integrada en el W3C</opcion>
+        <opcion id="b" correcta="true">Define normas UNE</opcion>
+        <opcion id="c">Es parte de la ONCE</opcion>
+        <opcion id="d">Todas las respuestas anteriores son correctas</opcion>
+        <opcion id="e">Ninguna de las respuestas anteriores es correcta</opcion>
+      </opciones>
+      <explicacion>AENOR (Asociación Española de Normalización y Certificación) es el organismo responsable de la elaboración y adopción de las normas UNE en España, entre ellas las relativas a accesibilidad web (UNE 139803 / UNE-EN 301549).</explicacion>
+    </pregunta>
+    <pregunta id="accesibilidad-04" tema="accesibilidad">
+      <enunciado>Para que el diseño sea accesible el tamaño de las imágenes debe ser definido por medio de:</enunciado>
+      <opciones>
+        <opcion id="a">px</opcion>
+        <opcion id="b">cm</opcion>
+        <opcion id="c" correcta="true">%</opcion>
+        <opcion id="d">Todas las respuestas anteriores son correctas</opcion>
+        <opcion id="e">Ninguna de las respuestas anteriores es correcta</opcion>
+      </opciones>
+      <explicacion>Definir el tamaño de las imágenes con porcentajes evita que al ampliar la vista o cambiar el tamaño de viewport se generen barras de desplazamiento horizontal o solapamientos con el texto.</explicacion>
+    </pregunta>
+    <pregunta id="accesibilidad-05" tema="accesibilidad">
+      <enunciado>Sobre SWML se puede decir:</enunciado>
+      <opciones>
+        <opcion id="a">Es un lenguaje estándar basado en XML</opcion>
+        <opcion id="b">Son las siglas de "SignWriting Markup Language"</opcion>
+        <opcion id="c">Se puede utilizar en sitios Web</opcion>
+        <opcion id="d" correcta="true">Todas las respuestas anteriores son correctas</opcion>
+        <opcion id="e">Ninguna de las respuestas anteriores es correcta</opcion>
+      </opciones>
+      <explicacion>SWML (SignWriting Markup Language) es una aplicación XML diseñada para almacenar, compartir e incrustar en la web textos redactados en SignWriting (escritura de lengua de signos).</explicacion>
+    </pregunta>
+    <pregunta id="accesibilidad-06" tema="accesibilidad">
+      <enunciado>Indicar las barreras relacionadas con la visión reducida en acceso a la Web:</enunciado>
+      <opciones>
+        <opcion id="a">Sitios Web con imágenes con poco contraste</opcion>
+        <opcion id="b">Sitios Web con pérdida de contexto cuando se amplían</opcion>
+        <opcion id="c">Sitios Web con tamaños de letra absolutos</opcion>
+        <opcion id="d" correcta="true">Todas las respuestas anteriores son correctas</opcion>
+        <opcion id="e">Ninguna de las respuestas anteriores es correcta</opcion>
+      </opciones>
+      <explicacion>Los usuarios con baja visión requieren un contraste suficiente (mínimo 4.5:1), reescalado dinámico de texto y diseño que no pierda coherencia al utilizar magnificadores de pantalla.</explicacion>
+    </pregunta>
+    <pregunta id="accesibilidad-07" tema="accesibilidad">
+      <enunciado>Sobre la protanopia se puede decir:</enunciado>
+      <opciones>
+        <opcion id="a" correcta="true">Se refiere a la ceguera al color rojo</opcion>
+        <opcion id="b">Se refiere a la ceguera al color verde</opcion>
+        <opcion id="c">Los sitios web se ajustan automáticamente a cualquier resolución</opcion>
+        <opcion id="d">Se refiere a la ceguera al color azul</opcion>
+        <opcion id="e">Ninguna de las respuestas anteriores es correcta</opcion>
+      </opciones>
+      <explicacion>La protanopia es la forma de discromatopsia consistente en la ausencia total de conos sensibles al color rojo (la deuteranopia corresponde al verde y la tritanopia al azul).</explicacion>
+    </pregunta>
+    <pregunta id="accesibilidad-08" tema="accesibilidad">
+      <enunciado>Indicar las barreras relacionadas con el acceso a la Web de las personas con ceguera:</enunciado>
+      <opciones>
+        <opcion id="a">Imágenes sin texto alternativo</opcion>
+        <opcion id="b">Marcos con la etiqueta "iframe"</opcion>
+        <opcion id="c">Tablas que no son tablas usadas para maquetar</opcion>
+        <opcion id="d" correcta="true">Todas las respuestas anteriores son correctas</opcion>
+        <opcion id="e">Ninguna de las respuestas anteriores es correcta</opcion>
+      </opciones>
+      <explicacion>La ausencia de equivalentes textuales (alt), el anidamiento opaco de iframes y las tablas maquetadoras sin encabezados ni roles semánticos constituyen las mayores trabas para el software lector de pantalla.</explicacion>
+    </pregunta>
+    <pregunta id="accesibilidad-09" tema="accesibilidad">
+      <enunciado>¿Es posible que una persona sorda y ciega pueda navegar por la Web?</enunciado>
+      <opciones>
+        <opcion id="a">No hay actualmente dispositivos para facilitarlo</opcion>
+        <opcion id="b">No hay normativa de accesibilidad</opcion>
+        <opcion id="c" correcta="true">Si es posible</opcion>
+        <opcion id="d">Todas las respuestas anteriores son correctas</opcion>
+        <opcion id="e">Ninguna de las respuestas anteriores es correcta</opcion>
+      </opciones>
+      <explicacion>Sí es posible: las personas sordocegas pueden acceder a la web mediante pantallas braille actualizables táctiles que traducen la información digital textual estructurada.</explicacion>
+    </pregunta>
+    <pregunta id="accesibilidad-10" tema="accesibilidad">
+      <enunciado>Indicar la versión actual de la normativa WAI denominada "WebContent Accessibility Guidelines":</enunciado>
+      <opciones>
+        <opcion id="a">2.0</opcion>
+        <opcion id="b">2.1</opcion>
+        <opcion id="c" correcta="true">2.2</opcion>
+        <opcion id="d">Todas las respuestas anteriores son correctas</opcion>
+        <opcion id="e">Ninguna de las respuestas anteriores es correcta</opcion>
+      </opciones>
+      <explicacion>WCAG 2.2 es la versión formal y vigente recomendada por el consorcio W3C/WAI desde octubre de 2023, ampliando criterios para baja visión, discapacidades cognitivas y dispositivos táctiles.</explicacion>
+    </pregunta>
+  </preguntas>
+</banco_preguntas>
