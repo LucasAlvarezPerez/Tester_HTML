@@ -1,14 +1,5 @@
----
-categoria: Autoevaluacion
-titulo: Cuestionario Interactivo de Repaso
-tags:
-  - Autoevaluacion
----
-
 # 📋 Cuestionario Interactivo y Plataforma de Autoevaluación
-
-Entorno interactivo universal para autoevaluación, simulación de exámenes y consolidación de conocimientos. Diseñado para funcionar de manera desacoplada de cualquier asignatura, adaptando automáticamente su interfaz, temas y banco de contenidos a partir de archivos XML.
-
+Entorno interactivo universal para autoevaluarse, simulando exámenes y consolidando conocimientos. Diseñado para funcionar de forma desacoplada con cualquier tipo de input, para cualquier contexto. Adapta sus temas, interfaz y banco de contenidos mediante este mismo input. 
 ---
 
 ## 🎮 Aplicación de Autoevaluación
