@@ -11,9 +11,9 @@ Conocimientos mínimos: XML básico (se requiere para conseguir rellenar el XML 
 ---
 
 ## 🎮 Contenido del Repositorio
-[cuestionario.html] : Contenido que abrirá la interfaz interactiva tipo test.
+[`cuestionario.html`](cuestionario.html) : Contenido que abrirá la interfaz interactiva tipo test.
 
-[preguntas.xml]: Archivo que sirve como caso de prueba formato necesario para cualquier XML que queramos usar en esta aplicación.
+[`preguntas.xml`](preguntas.xml): Archivo que sirve como caso de prueba formato necesario para cualquier XML que queramos usar en esta aplicación.
 
 ---
 
